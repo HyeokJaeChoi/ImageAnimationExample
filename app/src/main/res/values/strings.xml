@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ImageAnimationExample</string>
+    <string name="see_profile">프로필 확인</string>
 </resources>
