@@ -1,9 +1,11 @@
 package com.example.hyeok.imageanimationexample;
 
 import android.content.Intent;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
@@ -36,7 +38,7 @@ public class ProfileActivity extends AppCompatActivity{
     }
 
     public void expandImageAllScrean(View view){
-        Intent intent = new Intent(ProfileActivity.this, FillUserImageActivity.class);
+        Intent intent = new Intent(ProfileActivity.this, FullScreenImageActivity.class);
         startActivity(intent);
     }
 }

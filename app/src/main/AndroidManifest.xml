@@ -21,7 +21,8 @@
         <activity
             android:name=".ProfileActivity"
             android:theme="@style/AppTheme.NoActionAndStatusBar" />
-        <activity android:name=".FillUserImageActivity"></activity>
+        <activity android:name=".FullScreenImageActivity"
+            android:theme="@style/Theme.AppCompat.Translucent"></activity>
     </application>
 
 </manifest>
