@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ImageAnimationExample</string>
     <string name="see_profile">프로필 확인</string>
+    <string name="user_name">혁재</string>
+    <string name="user_email">gurwo1006@naver.com</string>
+    <string name="chatting_to_me">나와의 채팅</string>
+    <string name="setting_profile">프로필 관리</string>
 </resources>

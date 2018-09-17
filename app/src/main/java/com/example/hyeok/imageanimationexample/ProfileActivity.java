@@ -1,28 +1,40 @@
 package com.example.hyeok.imageanimationexample;
 
-import android.support.design.widget.AppBarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ImageView;
 
-public class ProfileActivity extends AppCompatActivity implements View.OnTouchListener{
+import com.squareup.picasso.Picasso;
+
+import de.hdodenhof.circleimageview.CircleImageView;
+
+public class ProfileActivity extends AppCompatActivity{
+
+    ImageView profileBackgroundImage;
+    CircleImageView profileUserImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        AppBarLayout appBarLayout = (AppBarLayout)findViewById(R.id.appbar);
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        profileBackgroundImage = (ImageView)findViewById(R.id.profile_background);
+        profileUserImage = (CircleImageView)findViewById(R.id.profile_user_image);
 
-        appBarLayout.setExpanded(true, true);
+        initBackgroundImage();
+        initProfileImage();
     }
 
-    @Override
-    public boolean onTouch(View v, MotionEvent event) {
-        return false;
+    public void initBackgroundImage(){
+        Picasso.get().load(R.drawable.profile_background).into(profileBackgroundImage);
+    }
+
+    public void initProfileImage(){
+        Picasso.get().load(R.drawable.profile_image).into(profileUserImage);
+    }
+
+    public void expandImageAllScrean(View view){
+
     }
 }
